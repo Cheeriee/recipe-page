@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 400 700;
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+:root {
+  box-sizing: border-box;
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+  --color-stone-900: hsl(24, 5%, 18%);
+  --color-stone-600: hsl(30, 10%, 34%);
+  --color-stone-150: hsl(30, 18%, 87%);
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-brown-800: hsl(14, 45%, 36%);
+  --color-white: hsl(0, 0%, 100%);
+  --font-family-young-serif: "Young Serif";
+  --font-family-Outfit: "Outfit";
+  --font-size-extra-large: 2.5rem;
+  --font-size-large: 1.75rem;
+  --font-size-medium: 1.25rem;
+  --font-size-regular: 1rem;
+  --font-weight-outfit-bold: 700;
+  --font-weight-outfit-semi-bold: 600;
+  --font-weight-outfit-regular: 400;
+  --font-weight-young-serif-regular: 400;
+  --line-height-100: 100%;
+  --line-height-150: 150%;
+  --spacing-1600: 8rem;
+  --spacing-600: 4rem;
+  --spacing-500: 2.5rem;
+  --spacing-400: 2rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-150: 0.75rem;
+  --spacing-100: 0.5rem;
+
+  --text-preset-1: var(--font-weight-young-serif-regular)
+    var(--font-size-extra-large) / var(--line-height-100)
+    var(--font-family-young-serif);
+  --text-preset-2: var(--font-weight-young-serif-regular) var(--font-size-large) /
+    var(--line-height-100) var(--font-family-young-serif);
+  --text-preset-3: var(--font-weight-outfit-semi-bold) var(--font-size-medium) /
+    var(--line-height-100) var(--font-family-Outfit);
+  --text-preset-4: var(--font-weight-outfit-regular) var(--font-size-regular) /
+    var(--line-height-150) var(--font-family-Outfit);
+  --text-preset-4-bold: var(--font-weight-outfit-bold) var(--font-size-regular) /
+    var(--line-height-150) var(--font-family-Outfit);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--color-stone-600);
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font: var(--text-preset-4);
+  margin: 0, auto;
+}
+
+h2 {
+  color: var(--color-brown-800);
+  font: var(--text-preset-2);
+  margin-bottom: var(--spacing-300);
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+  letter-spacing: 0px;
+  margin: 0;
+  text-align: left;
+}
+
+ul,
+ol {
+  padding-left: var(--spacing-300);
+}
+
+li {
+  padding-left: var(--spacing-200);
+}
+
+.recipe-image-container {
+  border: 3px sold blue;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  /* width: 375px; */
+}
+
+.recipe-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.container {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 375px;
+  gap: var(--spacing-400);
+  padding: var(--spacing-500) var(--spacing-400);
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-500);
+}
+
+.recipe-main {
+  width: 100%;
+  gap: var(--spacing-300);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.recipe-title {
+  color: var(--color-stone-900);
+  font: var(--text-preset-1);
+}
+
+/* preparation */
+.prep-summary {
+  background-color: var(--color-rose-50);
+  padding: var(--spacing-300);
+}
+
+.prep-title {
+  color: var(--color-rose-800);
+  font: var(--text-preset-3);
+  margin-bottom: var(--spacing-200);
+}
+
+.prep-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+  margin: 0;
+}
+
+.prep-item::marker {
+  color: var(--color-rose-800);
+  font: var(--text-preset-4-bold);
+}
+
+/* ingredients */
+.ingredients {
+  border-bottom: 1px solid var(--color-stone-150);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-200) 0;
+  gap: var(--spacing-100);
+  width: 100%;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+  margin-top: 0;
+}
+
+.ingredients-item::marker {
+  font: var(--text-preset-4-bold);
+  color: var(--color-rose-800);
+}
+
+/* instructions */
+.instructions {
+  display: flex;
+  border-bottom: 1px solid var(--color-stone-150);
+  flex-direction: column;
+  gap: var(--spacing-100);
+  padding: var(--spacing-200) 0;
+}
+
+.instructions-list {
+  margin-top: 0;
+}
+
+.instructions-item::marker {
+  color: var(--color-brown-800);
+  font: var(--text-preset-4-bold);
+}
+
+.instructions-item-title {
+  color: var(--color-stone-600);
+  font: var(--text-preset-4-bold);
+}
+
+/* nutrition */
+.nutrition-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto 1fr);
+  gap: var(--spacing-150);
+}
+
+.nutrition-name {
+  grid-column: 1;
+  padding-left: var(--spacing-400);
+}
+
+.nutrition-value {
+  color: var(--color-brown-800);
+  font: var(--text-preset-4-bold);
+  grid-column: 2;
+  padding-right: var(--spacing-400);
+}
+
+.nutrition-title,
+.nutrition p {
+  margin-bottom: 10px;
+}
+
+.line {
+  height: 0%;
+  grid-column: 1/-1;
+  border-bottom: 1px solid var(--color-stone-150);
+  margin: 0;
+}
+
+@media (min-width: 620px) {
+  body {
+    background-color: var(--color-stone-100);
+    padding: 1em;
+  }
+  .recipe-image-container {
+    border-radius: 24px 24px 0 0;
+    padding: 1em;
+    background-color: var(--color-white);
+    padding: var(--spacing-500) var(--spacing-500) 0;
+    margin-top: var(--spacing-1600);
+  }
+  .container {
+    background-color: var(--color-white);
+    border-radius: 0 0 24px 24px;
+    padding: var(--spacing-500);
+    margin-bottom: 1em;
+  }
+  .recipe-image {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 1279px) {
+    .recipe-image-container,
+    .container {
+      max-width: 620px;
+    }
+}
+    @media (min-width: 1280px) {
+        .recipe-image-container,
+        .container {
+          max-width: 740px;
+        }
+    }
+
