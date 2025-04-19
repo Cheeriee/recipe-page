@@ -103,7 +103,7 @@ img {
 .ingredients-list{
     width: 656px;
     border-bottom: 1px solid #E3DDD7;
-    padding-bottom: 12px;
+   padding: 8px; 
 }
 .ingredients-title{
 width: 656px;
@@ -114,11 +114,11 @@ width: 656px;
   letter-spacing: 0px;
   line-height: 100%;
   color: #854632;
-  
+   padding: 8px; 
 }
 .ingredients-item{
     width: 656px;
-    padding: 8px; 
+   
 }
 
 .ingredients-item::marker{
@@ -131,7 +131,7 @@ width: 656px;
     width: 656px;
   height: 332px;
   margin-bottom: 40px;
-  padding-top: 20px;
+/*   padding-top: 20px; */
   
 }
 
@@ -150,7 +150,7 @@ width: 656px;
 .instructions-list{
     width: 656px;
     border-bottom: 1px solid #E3DDD7;
-    padding-bottom: 12px;
+    padding: 8px; 
 }
 
 .instructions-item{
@@ -162,7 +162,7 @@ width: 656px;
 width: 656px;
   height: 332px;
   margin-bottom: 20px;
-  margin-top: 20px;
+/*   margin-top: 20px; */
 
 }
 
