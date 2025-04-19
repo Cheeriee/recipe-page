@@ -47,7 +47,7 @@ img {
 
 .main-title {
   width: 656px;
-  height: 40px;
+/*   height: 40px; */
   font-size: 40px;
   font-family: "Young Serif";
   font-weight: 400;
@@ -58,7 +58,7 @@ img {
 
 .main-description {
   width: 656px;
-  height: 48px;
+/*   height: 48px; */
   font-size: 16px;
   font-family: "Outfit";
   font-weight: 400;
