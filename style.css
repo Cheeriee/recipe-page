@@ -40,9 +40,10 @@ img {
 }
 .main-content {
   width: 656px;
+  padding-bottom: 5px;
   /* height: 112px; */
   /* margin-left: 24px; */
-  gap: 2px;
+
 
 }
 
